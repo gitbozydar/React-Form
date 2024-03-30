@@ -1,0 +1,11 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(59, 59, 59);
+  border-radius: 1rem;
+  padding: 0 1.5rem;
+}
+h3 {
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}

@@ -1,0 +1,34 @@
+html {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+body {
+  height: inherit;
+}
+#root {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: inherit;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+img {
+  animation: rotate infinite 10s linear;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+h1 {
+  margin: 0;
+}

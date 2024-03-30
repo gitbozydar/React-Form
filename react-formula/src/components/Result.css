@@ -1,0 +1,10 @@
+.correct-answer {
+  color: green;
+}
+.incorrect-answer {
+  color: red;
+}
+p,
+h3 {
+  margin: 0;
+}
