@@ -1,4 +1,12 @@
-const Logo = ({ imgSource, altImg, imgWidth, position, top, left }) => {
+const Logo = ({
+  imgSource,
+  altImg,
+  imgWidth,
+  position,
+  top,
+  left,
+  styleClass,
+}) => {
   return (
     <>
       <img
@@ -6,6 +14,7 @@ const Logo = ({ imgSource, altImg, imgWidth, position, top, left }) => {
         alt={altImg}
         width={imgWidth}
         style={{ position: position, top: top, left: left }}
+        className={styleClass}
       />
     </>
   );

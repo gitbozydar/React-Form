@@ -50,33 +50,35 @@ const Quiz = ({ questions }) => {
           usersAnswers={usersAnswers}
         />
       ) : (
-        <div className="quiz-wrapper">
+        <>
           <Logo
             imgSource={reactSmallLogo}
             altImg={"small-react-logo"}
-            imgWidth={50}
+            imgWidth={"30%"}
             position={"absolute"}
-            left={"1rem"}
-            top={"1rem"}
+            styleClass={"background-logo"}
           />
-          <span>
-            {currentQuestion + 1}/{questions.length}
-          </span>
-          <h2>{question}</h2>
+          <div className="quiz-wrapper">
+            <span>
+              {currentQuestion + 1}/{questions.length}
+            </span>
+            <h2>{question}</h2>
 
-          {choices.map((answer, index) => (
-            <AnswerButton
-              actionOnClick={() => {
-                handleCalculation(answer, correctAnswer);
-                handleQuizCompletion();
-              }}
-              children={"Next"}
-              key={index}
-            >
-              {choices[index]}
-            </AnswerButton>
-          ))}
-        </div>
+            {choices.map((answer, index) => (
+              <AnswerButton
+                styleClass={"question-button"}
+                actionOnClick={() => {
+                  handleCalculation(answer, correctAnswer);
+                  handleQuizCompletion();
+                }}
+                children={"Next"}
+                key={index}
+              >
+                {choices[index]}
+              </AnswerButton>
+            ))}
+          </div>
+        </>
       )}
     </>
   );

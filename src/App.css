@@ -3,9 +3,6 @@ html {
   overflow-y: scroll;
 }
 
-body {
-  height: inherit;
-}
 #root {
   display: flex;
   position: relative;
@@ -31,4 +28,13 @@ img {
 
 h1 {
   margin: 0;
+}
+button {
+  width: 80%;
+}
+.start-button {
+  display: flex;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
 }

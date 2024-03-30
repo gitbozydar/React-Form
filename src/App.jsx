@@ -1,4 +1,5 @@
 import "./App.css";
+import AnswerButton from "./components/AnswerButton.jsx";
 import Home from "./components/Home.jsx";
 import Quiz from "./components/Quiz.jsx";
 import { reactQuestions } from "./ConstantQuestions.js";
@@ -15,13 +16,14 @@ function App() {
     <>
       {!startQuiz ? (
         <Home title={"React Quiz"}>
-          <button
-            onClick={() => {
+          <AnswerButton
+            styleClass={"start-button"}
+            actionOnClick={() => {
               handleQuizStart();
             }}
           >
             Start!
-          </button>
+          </AnswerButton>
         </Home>
       ) : null}
 

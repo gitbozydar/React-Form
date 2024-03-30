@@ -15,15 +15,7 @@ const Result = ({
 
   return (
     <>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: "1rem",
-          flexWrap: "wrap",
-          alignContent: "center",
-        }}
-      >
+      <div className="result-wrapper">
         <Score
           color={calculatedPoints >= 80 ? "green" : "red"}
           message={`${calculatedPoints}% ${
@@ -46,7 +38,7 @@ const Result = ({
             answer={userAnswer}
           />
         ))}
-        <div>
+        <div style={{ display: "flex" }}>
           <AnswerButton
             fontSize="1.5rem"
             backgroundColor="#5993e3"
