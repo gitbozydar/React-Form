@@ -2,7 +2,7 @@
   "name": "react-formula",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://gitbozydar.github.io/react-form/",
+  "homepage": "https://gitbozydar.github.io/react-form",
   "type": "module",
   "scripts": {
     "dev": "vite",
